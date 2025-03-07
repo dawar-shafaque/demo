@@ -1,0 +1,42 @@
+2025-03-07 16:53:47,860 [INFO] USER:dawar_shafaque handlers.py:106:syndicate LOG: Configuration used: C:\Users\dawar_shafaque\aws-syndicate-task\demo\.syndicate-config-dev
+2025-03-07 16:53:47,862 [ERROR] USER:dawar_shafaque decorators.py:136:wrapper LOG: sdct.conf does not exist inside C:\Users\dawar_shafaque\aws-syndicate-task\demo\.syndicate-config-dev folder
+2025-03-07 16:53:47,864 [ERROR] USER:dawar_shafaque decorators.py:137:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\decorators.py", line 134, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\handlers.py", line 107, in syndicate
+    initialize_connection()
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\__init__.py", line 106, in initialize_connection
+    CONFIG = ConfigHolder(CONF_PATH)
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\conf\processor.py", line 63, in __init__
+    self._init_conf_config(dir_path=dir_path)
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\conf\processor.py", line 92, in _init_conf_config
+    raise AssertionError(
+AssertionError: sdct.conf does not exist inside C:\Users\dawar_shafaque\aws-syndicate-task\demo\.syndicate-config-dev folder
+Traceback (most recent call last):
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\decorators.py", line 134, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\handlers.py", line 107, in syndicate
+    initialize_connection()
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\__init__.py", line 106, in initialize_connection
+    CONFIG = ConfigHolder(CONF_PATH)
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\conf\processor.py", line 63, in __init__
+    self._init_conf_config(dir_path=dir_path)
+  File "C:\Users\dawar_shafaque\AppData\Local\Programs\Python\Python310\lib\site-packages\syndicate\core\conf\processor.py", line 92, in _init_conf_config
+    raise AssertionError(
+AssertionError: sdct.conf does not exist inside C:\Users\dawar_shafaque\aws-syndicate-task\demo\.syndicate-config-dev folder
+2025-03-07 16:58:43,941 [INFO] USER:dawar_shafaque generate.py:72:project LOG: Project name: task05
+2025-03-07 16:58:43,941 [INFO] USER:dawar_shafaque generate.py:79:project LOG: Project path: C:\Users\dawar_shafaque\aws-syndicate-task\demo
+2025-03-07 16:58:43,957 [INFO] USER:dawar_shafaque project.py:77:generate_project_structure LOG: Project task05 folder has been successfully created.
+2025-03-07 16:58:43,957 [INFO] USER:dawar_shafaque helper.py:330:timed LOG: Stage project, elapsed time: 0:00:00.015839
+2025-03-07 16:59:12,304 [INFO] USER:dawar_shafaque s3_resource.py:40:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-sbox01'
+2025-03-07 16:59:12,304 [INFO] USER:dawar_shafaque s3_resource.py:73:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-sbox01'
+2025-03-07 16:59:12,304 [INFO] USER:dawar_shafaque helper.py:525:convert LOG: Stripping run_id:JAP-08,run_type:stm,type:user,user_id:55007a93 from "," a bit..
+2025-03-07 16:59:12,304 [INFO] USER:dawar_shafaque helper.py:529:convert LOG: Converting: run_id:JAP-08,run_type:stm,type:user,user_id:55007a93 to dict..
+2025-03-07 16:59:12,304 [INFO] USER:dawar_shafaque helper.py:541:convert LOG: Converted to such a dict: {'run_id': 'JAP-08', 'run_type': 'stm', 'type': 'user', 'user_id': '55007a93'}
+2025-03-07 16:59:14,319 [WARNING] USER:dawar_shafaque generator.py:76:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2025-03-07 16:59:14,319 [WARNING] USER:dawar_shafaque generator.py:93:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\Users\dawar_shafaque\aws-syndicate-task\demo\task05\.syndicate-config-dev
+2025-03-07 16:59:14,326 [INFO] USER:dawar_shafaque generator.py:155:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\Users\dawar_shafaque\aws-syndicate-task\demo\task05\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\Users\dawar_shafaque\aws-syndicate-task\demo\task05\.syndicate-config-dev
+2025-03-07 16:59:14,326 [INFO] USER:dawar_shafaque helper.py:330:timed LOG: Stage config, elapsed time: 0:00:02.022019

@@ -1,0 +1,44 @@
+name: demo
+events:
+- operation: package_meta
+  initiator: dawar_shafaque
+  bundle_name: demo_250305.182338
+  time_start: '2025-03-05T18:23:38Z'
+  time_end: '2025-03-05T18:23:39Z'
+  duration_sec: 0.007
+  status: failed
+- operation: assemble
+  initiator: dawar_shafaque
+  bundle_name: demo_250305.182338
+  time_start: '2025-03-05T18:23:38Z'
+  time_end: '2025-03-05T18:23:38Z'
+  duration_sec: 0.002
+  status: succeeded
+- operation: test
+  initiator: dawar_shafaque
+  time_start: '2025-03-05T18:23:38Z'
+  time_end: '2025-03-05T18:23:38Z'
+  duration_sec: 0.001
+  status: succeeded
+- operation: package_meta
+  initiator: dawar_shafaque
+  bundle_name: demo_250305.180941
+  time_start: '2025-03-05T18:09:42Z'
+  time_end: '2025-03-05T18:09:42Z'
+  duration_sec: 0.019
+  status: failed
+- operation: assemble
+  initiator: dawar_shafaque
+  bundle_name: demo_250305.180941
+  time_start: '2025-03-05T18:09:42Z'
+  time_end: '2025-03-05T18:09:42Z'
+  duration_sec: 0.001
+  status: succeeded
+- operation: test
+  initiator: dawar_shafaque
+  time_start: '2025-03-05T18:09:42Z'
+  time_end: '2025-03-05T18:09:42Z'
+  duration_sec: 0.001
+  status: succeeded
+locks: {}
+latest_deploy: {}
